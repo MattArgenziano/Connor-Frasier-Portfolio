@@ -1,0 +1,633 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #122c34;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    /* width: 100vw; */
+}
+
+header {
+    background-color: #122c34;
+}
+
+header div a {
+    text-decoration: none;
+    color: white;
+}
+
+header div a:visited {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 50px 0 50px;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    letter-spacing: 2px;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    letter-spacing: 2px;
+}
+
+.navbar-links li a:hover {
+    color: #44CFCB;
+    transition: all 0.6s ease 0s;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* Billboard/Image and container for text */
+h1, h3 {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 0;
+    margin-top: 50px;
+}
+
+p {
+    color: white;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#billboard {
+    margin: 0;
+    padding: 0;
+    height: 96%;
+    font-family: 'Roboto', sans-serif;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    overflow: hidden;
+}
+
+#background-video {
+    position: fixed;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+    top: 50px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.container {
+    margin: 300px auto auto auto;
+    width: 600px;
+    text-align: center;
+    text-overflow: clip;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+
+}
+
+.button {
+    background-color: rgb(68, 207, 203);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    margin-top: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.button:hover {
+    background-color:  rgba(68, 207, 203, 0.8);
+    color: black;
+}
+
+/* Photogpraphy Page CSS */
+h2 {
+    color: black;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0 0 0;
+    margin: 0;
+    letter-spacing: 5px;
+}
+
+.background-text {
+    color: white;
+    font-weight: 300;
+}
+
+.big-container {
+    margin-top: 5rem;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img-description {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.gallery-image {
+    width: 400px;
+    height: 250px;
+    margin: 50px;
+}
+
+.gallery-image img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.gallery-image img:hover {
+    opacity: .5;
+}
+
+.gallery-image:hover .img-description {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+.modal-content .headshot {
+    max-width: 100%;
+    height: 50%;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* BACK TO TOP BUTTON */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+/* VIDEOGRAPHY CSS */
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video-card {
+    text-align: left;
+    justify-content: center;
+    width: 500px;
+    height: 509px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px;
+    transition: all 0.3s ease 0s;
+}
+
+.video-card:hover {
+    transform: scale(1.1);
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    color: white;
+    padding: 0;
+}
+
+/* SOCIAL MEDIA/GRPAHICS CSS */
+.pdf-card {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.pdf-image {
+    font-size: 4rem;
+}
+
+.pdf-card a {
+    color: #d1241b;
+    transition: all 0.4s ease 0s;
+}
+
+.pdf-card a:hover {
+    opacity: 0.8;
+}
+
+.pdf-card a:visited {
+    color: #d1241b;
+}
+
+.pdf-card p {
+    font-weight: bold;
+}
+
+.graphic-image {
+    width: 600px;
+    height: 400px;
+    margin: 50px;
+    transition: all 0.4s ease 0s;
+}
+
+.graphic-image img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+.graphic-image:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+.big-container h5 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+/* ABOUT ME PAGE CSS */
+.circle-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.about-me {
+    text-align: center;
+}
+
+.about-me a img {
+    margin: 20px 20px;
+    transition: all 0.4s ease 0s;
+}
+
+.about-me a img:hover {
+    opacity: 0.6;
+}
+
+.about-me form {
+    color: white;
+    margin-top: 50px;
+}
+
+.about-me form input {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.about-me form input::placeholder, textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+}
+
+.about-me form label {
+    letter-spacing: 1px;
+}
+
+#message {
+    border-radius: 10px;
+    padding: 5px;
+    font-family: inherit;
+    letter-spacing: 1px;
+}
+
+#message:focus, input:focus {
+    /* outline: 2px solid #44CFCB; */
+    border: 2px solid #44CFCB;
+    box-shadow: rgba(68, 207, 203, 1);    
+}
+
+.about-me button {
+    background-color: rgb(68, 207, 203);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    margin-top: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s ease-in-out;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.about-me button:hover {
+    background-color: rgba(68, 207, 203, 0.6);
+}
+
+.g-recaptcha {
+    align-items: center;
+    text-align: center;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+
+    .billboard-text {
+        font-size: 11px;
+    }
+
+    #billboard .container h1 {
+        font-size: 40px;
+    }
+
+    #billboard .container {
+        width: 100%;
+    }
+
+    .video-card iframe {
+        height: 200px;
+    }
+
+    .video-card {
+        height: 450px;
+    }
+
+    #billboard {
+        margin: 0;
+        padding: 0;
+        height: 95%;
+        font-family: 'Roboto', sans-serif;
+        background-image: 
+            linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+            url("/assets/imgs/billboard_image.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-clip: border-box;
+    }
+
+    #background-video {
+        visibility: hidden;
+    }
+
+    .container {
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    h1 {
+       padding: 300px 0 0 0; 
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .image-container div {
+        margin: 0;
+    }
+
+    .image-container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 1028px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .big-container {
+        width: auto;
+        height: auto;
+    }
+
+
+}
+
+
+
+
+    

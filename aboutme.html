@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://kit.fontawesome.com/0836cee9e8.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="brand-title"><a href="index.html">Connor Frasier</a></div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="videography.html">Videography/Editing</a></li>
+                <li><a href="socialmedia.html">Social Media/Graphics</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- About Me Card -->
+    <div class="container see-thru text-left big-container about-me">
+      <h2 class="background-text" style="text-align: center;">About Me</h2>
+      <img src="/assets/imgs/67821969_368457250507423_3165760839865073664_n_edited.jpg" alt="Image of Connor Frasier" class="circle-img">
+      <h3>Bio</h3>
+      <p class="background-text" style="text-align: left; padding-left: 10%; padding-right: 10%;">I'm a 25yr old ESU Graduate from Pennsylvania, currently working at Clarkson University in NY as a Digital Content Creator/Writer, while also pursuing my MBA. I have been interested in various forms of digital media since I was a kid and have turned it into my passion. Please take the time to look over my work and if you have any questions, feel free to contact me. You may also connect to my social media pages below.</p>
+      <h3>Social Media Links</h3>
+      <a href="https://www.linkedin.com/in/connor-frasier-522944148/"><img src="/assets/imgs/linkedin.jpg" alt="LinkedIn"></a>
+      <a href="https://www.facebook.com/connorfrasier"><img src="/assets/imgs/facebook.jpg" alt="Facebook"></a>
+      <h3>Resume</h3>
+      <div class="pdf-card" style="margin-right: 0;">
+        <a href="/assets/imgs/PDFs/Connor-D-Frasier-Resume_CV-1.pdf" target="_blank"><i class="fas fa-file-pdf pdf-image"></i></a>
+        <p>Resume PDF</p>
+      </div>
+
+      <h3>Contact Me</h3>
+      <form action="POST" method="POST" name="contact" data-netlify="true">
+        <label for="name">Name:</label>
+        <input name="name" type="text" placeholder="Enter your name" size="30" required><br>
+        <label for="email">Email:</label>
+        <input name="email" type="email" class="form-control" id="email" placeholder="Enter your email" size="30" required><br>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea><br>
+        <button>Send Message</button>
+      </form>
+
+    </div>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button onclick="backToTop()" class="back-to-top"><i class="fas fa-arrow-up"><br>Back to top</i></button>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
