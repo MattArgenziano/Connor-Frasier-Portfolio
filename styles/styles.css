@@ -365,7 +365,8 @@ h2 {
 }
 
 .video-card:hover {
-    transform: scale(1.1);
+    /* box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2); */
+    border: 1px solid white;
 }
 
 h4 {
