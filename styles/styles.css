@@ -15,7 +15,7 @@ body {
     padding-bottom: 0;
     font-family: "Roboto", sans-serif;
     /* background-color: #122c34; */
-    background: linear-gradient(180deg, rgba(2,0,45,1) 0%, rgba(0,181,255,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(116,116,116,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
@@ -23,7 +23,8 @@ body {
 }
 
 header {
-    background-color: rgb(0, 22, 47);
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 
 header div a {
@@ -67,7 +68,7 @@ header div a:visited {
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 1rem;
     letter-spacing: 2px;
 }
@@ -498,10 +499,10 @@ h4 {
 }
 
 .about-me button {
-    background-color: black;
+    background-color: #44CFCB;
     border: none;
     border-radius: 10px;
-    color: white;
+    color: black;
     margin-top: 20px;
     padding: 15px 32px;
     text-align: center;
@@ -515,7 +516,8 @@ h4 {
 }
 
 .about-me button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(47, 148, 145);
+    color: white;
 }
 
 .g-recaptcha {
