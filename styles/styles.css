@@ -26,6 +26,7 @@ header {
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     border-bottom: 2px solid #333;
+    color: white;
 }
 
 header div a {
