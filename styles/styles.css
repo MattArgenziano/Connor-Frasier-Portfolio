@@ -70,7 +70,7 @@ header div a:visited {
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 1rem;
     letter-spacing: 2px;
 }
