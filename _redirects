@@ -1,2 +1,5 @@
-/index.html              /index
-/photography.html        /photography
+/*                  /index.html             200
+/photography/*      /photography.html       200
+/videopgraphy/*     /videopgraphy.html      200
+/socialmedia/*      /socialmedia.html       200
+/aboutme/*          /aboutme.html           200
