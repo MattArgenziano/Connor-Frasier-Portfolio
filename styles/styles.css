@@ -156,8 +156,6 @@ p {
     text-overflow: clip;
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
-    /* background-color: rgba(0, 0, 0, 0.3); */
-
 }
 
 .button {
@@ -197,7 +195,7 @@ h2 {
 }
 
 .big-container {
-    margin-top: 5rem;
+    margin-top: 0;
     width: 1000px;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: left;
