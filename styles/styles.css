@@ -556,7 +556,7 @@ h4 {
 }
 
 .svc-heading {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     color: black;
 }
 
@@ -574,6 +574,15 @@ h4 {
     color: black;
     width: 50%;
     margin: auto;
+}
+
+.svc-section:nth-child(1) {
+    background-image: 
+            linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
+            url("https://res.cloudinary.com/frasiermedia-com/image/upload/v1618516594/173978913_1334030340304915_1204059167544002069_n_cikker.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* 100% Image Width on Smaller Screens */
