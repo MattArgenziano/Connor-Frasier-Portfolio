@@ -593,7 +593,7 @@ h4 {
     background-image: 
             linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
             url("https://res.cloudinary.com/frasiermedia-com/image/upload/v1618518020/172116467_567781134196070_966795719413604258_n_yj3ce4.png");
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
     background-size: contain;
 }
