@@ -27,6 +27,7 @@ header {
     overflow: hidden;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 10px 0 10px 0;
 }
 
 header div a {
@@ -528,6 +529,22 @@ h4 {
     align-items: center;
     text-align: center;
 }
+
+/* SERVICES PAGE CSS */
+.navbar-links .svc-Btn {
+    background: linear-gradient(to bottom, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0;
+    border-radius: 50px;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: none;
+}
+
+.navbar-links .svc-Btn a:hover {
+    color: rgba(230, 230, 230, 0.924);
+    transform: scale(1);
+}
+
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
