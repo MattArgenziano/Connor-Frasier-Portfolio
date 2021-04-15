@@ -566,6 +566,11 @@ h4 {
     padding-top: 25px;
 }
 
+.svc-section:nth-child(1) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .svc-section:nth-child(even) {
     background-color: rgb(232, 235, 219);
 }
@@ -576,12 +581,21 @@ h4 {
     margin: auto;
 }
 
+.svc-heading1 {
+    background-color: rgb(232, 235, 219);
+    width: 25%;
+    margin: auto;
+    color: black;
+    border-radius: 20px;
+}
+
 .svc-section:nth-child(1) {
     background-image: 
             linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
-            url("https://res.cloudinary.com/frasiermedia-com/image/upload/v1618516594/173978913_1334030340304915_1204059167544002069_n_cikker.png");
-    background-position: center;
+            url("https://res.cloudinary.com/frasiermedia-com/image/upload/v1618518020/172116467_567781134196070_966795719413604258_n_yj3ce4.png");
+    background-position: bottom;
     background-attachment: fixed;
+    background-size: contain;
 }
 
 /* 100% Image Width on Smaller Screens */
