@@ -532,17 +532,21 @@ h4 {
 
 /* SERVICES PAGE CSS */
 .navbar-links .svc-Btn {
-    background: linear-gradient(to bottom, #6be585, #dd3e54); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #2e8b88;
     padding: 0;
     border-radius: 50px;
-    font-weight: 400;
+    font-weight: 800;
     margin-left: 20px;
     transition: none;
 }
 
 .navbar-links .svc-Btn a:hover {
-    color: rgba(230, 230, 230, 0.924);
-    transform: scale(1);
+    color: white;
+    transform: scale(1)
+}
+
+.navbar-links .svc-Btn a {
+    color: white;
 }
 
 
