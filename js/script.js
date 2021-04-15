@@ -32,6 +32,12 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+window.addEventListener('keydown', (e) => {
+  if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27) && (e.target.nodeName=='BODY')){
+    modal.style.display = "none";
+  }
+});
+
 // Calling scroll function
 window.onscroll = function() {
   displayOnScroll()
