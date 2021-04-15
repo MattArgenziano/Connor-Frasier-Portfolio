@@ -563,7 +563,7 @@ h4 {
 .svc-section {
     background-color: white; 
     padding-bottom: 100px;
-    padding-top: 100px;
+    padding-top: 25px;
 }
 
 .svc-section:nth-child(even) {
