@@ -583,7 +583,7 @@ h4 {
 
 .svc-heading1 {
     background-color: rgb(232, 235, 219);
-    width: 25%;
+    width: 310px;
     margin: auto;
     color: black;
     border-radius: 20px;
@@ -594,8 +594,9 @@ h4 {
             linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
             url("https://res.cloudinary.com/frasiermedia-com/image/upload/v1618518020/172116467_567781134196070_966795719413604258_n_yj3ce4.png");
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -626,8 +627,7 @@ h4 {
 
     #billboard {
         margin: 0;
-        padding: 0;
-        height: 95%;
+        padding-top: 50%;
         font-family: 'Roboto', sans-serif;
         background-image: 
             linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.1)),
