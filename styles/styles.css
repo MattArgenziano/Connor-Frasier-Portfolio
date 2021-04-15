@@ -572,6 +572,8 @@ h4 {
 
 .svc-caption {
     color: black;
+    width: 50%;
+    margin: auto;
 }
 
 /* 100% Image Width on Smaller Screens */
@@ -622,10 +624,6 @@ h4 {
     .container {
         margin: 0;
         background-color: rgba(0, 0, 0, 0);
-    }
-
-    h1 {
-       padding: 300px 0 0 0; 
     }
 }
 
