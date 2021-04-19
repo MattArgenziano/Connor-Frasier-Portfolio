@@ -1,6 +1,7 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbarLinks = document.getElementsByClassName('navbar-links')[0];
 const img = document.getElementsByClassName("img");
+const modalImg = document.getElementById('img01');
 let modal = document.getElementById("myModal");
 
 // From HTMLCollection to Array
@@ -43,6 +44,9 @@ window.onscroll = function() {
   displayOnScroll()
 };
 
+// Hides modal when user clicks outside of modal image
+window.addEventListener('click', hideModal);
+
 // BACK TO TOP FUNCTION
 function backToTop() {
   const topButton = document.querySelector('.back-to-top');
@@ -58,5 +62,12 @@ function displayOnScroll() {
     topButton.style.display = "block";
   } else {
     topButton.style.display = "none";
+  }
+}
+
+// Function for hiding modal
+function hideModal(e) {
+  if(e.target === modal) {
+    modal.style.display = "none";
   }
 }
