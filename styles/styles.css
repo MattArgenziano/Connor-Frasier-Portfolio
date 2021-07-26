@@ -214,9 +214,10 @@ h2 {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 200px;
 }
 
 .img-description {
