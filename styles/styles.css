@@ -360,6 +360,25 @@ h2 {
     margin-bottom: 20px;
 }
 
+.featured-video {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.featured-video > .featured-card > iframe {
+    width: 40%;
+    height: 500px;
+}
+
+.featured-video > .featured-card > h4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
 .video-card {
     text-align: left;
     justify-content: center;
@@ -709,6 +728,11 @@ h4 {
     .big-container {
         width: auto;
         height: auto;
+    }
+
+    .featured-video > .featured-card > iframe {
+        height: 250px;
+        width: 400px;
     }
 }
 
