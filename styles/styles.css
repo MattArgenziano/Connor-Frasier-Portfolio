@@ -619,6 +619,50 @@ h4 {
     background-size: cover;
 }
 
+.svc-package-card {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 250px;
+    height: 280px;
+    border-radius: 5%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+}
+.svc-package-card p {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.svc-package-card .svc-price {
+    font-size: 30px;
+    color:rgb(47, 148, 145);
+    margin: 10px 0 10px 0;
+}
+
+.svc-package-card .svc-included {
+    margin: 30px 0 30px 0;
+}
+
+.svc-package-card button {
+    font-weight: bolder;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    background-color: #2e8b88;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.svc-package-card button:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(68, 207, 203);
+    color: black;
+    cursor: pointer;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
