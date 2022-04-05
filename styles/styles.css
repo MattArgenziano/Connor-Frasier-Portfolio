@@ -379,6 +379,10 @@ h2 {
     text-align: center;
 }
 
+.featured-video > .featured-card > p {
+    width: 100%;
+}
+
 .video-card {
     text-align: left;
     justify-content: center;
@@ -734,6 +738,19 @@ h4 {
     .gallery-image {
         margin: 50px;
     }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .featured-video > .featured-card > p {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .featured-video {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -775,8 +792,8 @@ h4 {
     }
 
     .featured-video > .featured-card > iframe {
-        height: 250px;
-        width: 400px;
+        height: 200px;
+        width: 300px;
     }
 }
 
