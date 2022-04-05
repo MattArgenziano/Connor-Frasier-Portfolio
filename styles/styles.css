@@ -685,10 +685,6 @@ h4 {
         width: 100%;
     }
 
-    .video-card iframe {
-        height: 200px;
-    }
-
     #billboard {
         margin: 0;
         padding-top: 50%;
@@ -748,8 +744,20 @@ h4 {
         text-align: center;
     }
 
+    .video-card > iframe {
+        height: 200px;
+    }
+
     .hidden {
         display: none;
+    }
+
+    .video-card > h4 {
+        font-size: 25px;
+    }
+
+    .video-card {
+        height: 400px;
     }
 }
 
@@ -794,10 +802,6 @@ h4 {
     .featured-video > .featured-card > iframe {
         height: 200px;
         width: 300px;
-    }
-
-    .video-card {
-        height: 400px;
     }
 }
 
