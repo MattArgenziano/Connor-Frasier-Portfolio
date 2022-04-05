@@ -387,7 +387,7 @@ h2 {
     text-align: left;
     justify-content: center;
     width: 500px;
-    height: auto;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 25px;
     border-radius: 10px;
@@ -689,10 +689,6 @@ h4 {
         height: 200px;
     }
 
-    .video-card {
-        height: 500px;
-    }
-
     #billboard {
         margin: 0;
         padding-top: 50%;
@@ -798,6 +794,10 @@ h4 {
     .featured-video > .featured-card > iframe {
         height: 200px;
         width: 300px;
+    }
+
+    .video-card {
+        height: 400px;
     }
 }
 
