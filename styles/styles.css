@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    /* width: 100vw; */
+    min-width: 100vw;
 }
 
 header {
@@ -582,6 +582,7 @@ h4 {
 .svc-heading {
     margin-bottom: 25px;
     color: black;
+    width: 100%;
 }
 
 .svc-section {
@@ -607,10 +608,14 @@ h4 {
 
 .svc-heading1 {
     background-color: rgba(232, 235, 219, 0.1);
-    width: 400px;
+    width: 50%;
     margin: auto;
     color: white;
     border-radius: 20px;
+}
+
+.svc-heading1 > h1 {
+    width: 100%;
 }
 
 .svc-section:nth-child(1) {
@@ -643,7 +648,10 @@ h4 {
     font-size: 30px;
     color:rgb(47, 148, 145);
     margin: 10px 0 10px 0;
+    width: 100%;
 }
+
+
 
 .svc-package-card .svc-included {
     margin: 30px 0 30px 0;
@@ -668,6 +676,21 @@ h4 {
 }
 
 /* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 400px){
+    .svc-image {
+        height: 150px;
+    }
+
+    .svc-image > iframe {
+        width: 200px;
+    }
+
+    .svc-package-card > .svc-price {
+        font-size: 20px;
+    }
+}
+
+ 
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
