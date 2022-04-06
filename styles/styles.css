@@ -411,9 +411,6 @@ h4 {
 
 /* SOCIAL MEDIA/GRPAHICS CSS */
 .pdf-card {
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: 30px;
     align-items: center;
     text-align: center;
 }
