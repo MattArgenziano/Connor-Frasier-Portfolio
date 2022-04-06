@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 header {
