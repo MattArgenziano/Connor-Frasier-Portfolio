@@ -23,11 +23,11 @@ body {
 }
 
 header {
-    background-color: rgba(230, 230, 230, 0.924);
+    background-color: rgba(230, 230, 230, 1);
     overflow: hidden;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 5px 0 5px 0;
+    padding: 0;
 }
 
 header div a {
@@ -141,12 +141,14 @@ p {
 
 #background-video {
     position: fixed;
+    object-fit: cover;
     margin: auto;
     right: 0;
     bottom: 0;
+    left: 0;
     top: 50px;
     min-width: 100%;
-    min-height: 100%;
+    max-height: 100%;
     z-index: -1;
 }
 
